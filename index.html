@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/temas.css">
+    
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="bg-d-r">
+    <div class="logo-bg">
+        <svg id="logo" data-name="Capa 1" width="32" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.02 9.64">
+            <path d="M2.45,9.64A7.27,7.27,0,0,1,.61,7.41,5.49,5.49,0,0,1,0,4.85,5.64,5.64,0,0,1,.69,2.11,6.67,6.67,0,0,1,1.48,1a8.5,8.5,0,0,1,1-1l.7.7A6.17,6.17,0,0,0,1.71,2.61a4.88,4.88,0,0,0-.5,2.15A5.17,5.17,0,0,0,1.71,7,6,6,0,0,0,3.18,8.9Z"/><path d="M6.55,7.52l0-.67a3.4,3.4,0,0,1-.34.32,2.59,2.59,0,0,1-.39.25,2.08,2.08,0,0,1-.46.16,2.38,2.38,0,0,1-.55.06,1.85,1.85,0,0,1-.69-.12,1.3,1.3,0,0,1-.5-.32,1.39,1.39,0,0,1-.3-.5,1.87,1.87,0,0,1-.11-.64,1.55,1.55,0,0,1,.16-.68,1.47,1.47,0,0,1,.47-.53,2.55,2.55,0,0,1,.78-.34A4.13,4.13,0,0,1,5.7,4.38h.67V4.07a1,1,0,0,0,0-.35.64.64,0,0,0-.18-.27.75.75,0,0,0-.32-.17,1.37,1.37,0,0,0-.49-.07,3.8,3.8,0,0,0-.89.11,4.35,4.35,0,0,0-.86.29v-1a6.78,6.78,0,0,1,.85-.24,5.47,5.47,0,0,1,1-.09,4,4,0,0,1,1,.1,2,2,0,0,1,.68.33,1.42,1.42,0,0,1,.39.54A2.2,2.2,0,0,1,7.6,4v3.5ZM6.37,5.26H5.62a2,2,0,0,0-.53.06,1,1,0,0,0-.35.16.76.76,0,0,0-.2.25A.72.72,0,0,0,4.48,6a.57.57,0,0,0,.2.48.84.84,0,0,0,.55.17,1,1,0,0,0,.53-.19,3.15,3.15,0,0,0,.61-.54Z"/><path d="M11.6.4,8.54,7.52h1.2L12.8.4Z"/><path d="M12,5.66a1,1,0,0,1,.39.08.94.94,0,0,1,.53.53,1,1,0,0,1,.07.39A1,1,0,0,1,13,7a1,1,0,0,1-.21.31,1,1,0,0,1-.32.21,1,1,0,0,1-.39.08,1,1,0,0,1-.38-.08,1,1,0,0,1-.31-.21,1.1,1.1,0,0,1-.2-.31,1,1,0,0,1-.08-.38,1,1,0,0,1,.08-.39,1.16,1.16,0,0,1,.2-.32,1,1,0,0,1,.31-.21A1,1,0,0,1,12,5.66Z"/>
+        </svg>
+    </div>
+    <div class="calculadora">
+        <div class="display">
+            <div class="res-op">
+                <label id="igual" class="no-pe"></label>
+                <label id="resultado" class="selectable-r"></label>
+                <label id="operacion" class="no-pe"></label>
+            </div>
+            <input type="text" class="entrada no-pe" value="" placeholder="0" 
+            maxlength="10" readonly>
+            <label id="aviso" class="no-pe"></label>
+        </div>
+
+        <div class="grid-extra-ops extra-ops-bg">
+            <button type="button" class="boton btn-neg extra-op btn-esp-r" title="Cambiar signo" disabled value="-">-/+</button>
+            <button type="button" class="boton btn-exp extra-op btn-esp-r" title="Exponente" value="^">x<sup>n</sup></button>
+            <button type="button" class="boton btn-fac extra-op btn-esp-r" title="Factorial">n!</button>
+        </div>
+        <div class="grid-botones no-select">
+            <div class="grid-nums">
+                <input type="button" class="boton btn-1 num" value="1">
+                <input type="button" class="boton btn-2 num" value="2">
+                <input type="button" class="boton btn-3 num" value="3">
+                <input type="button" class="boton btn-4 num" value="4">
+                <input type="button" class="boton btn-5 num" value="5">
+                <input type="button" class="boton btn-6 num" value="6">
+                <input type="button" class="boton btn-7 num" value="7">
+                <input type="button" class="boton btn-8 num" value="8">
+                <input type="button" class="boton btn-9 num" value="9">
+                <div class="grid-nums-decim">
+                    <input type="button" class="boton btn-0 num" value="0">
+                    <input type="button" class="boton btn-dot" value=".">
+                </div>
+                <button type="button" class="boton btn-dlt btn-borr-r" title="Borrar" disabled>
+                    <svg xmlns="" width="32" height="32" fill="currentColor" class="bi bi-eraser-fill" viewBox="0 0 16 16">
+                        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="grid-ops">
+                <input type="button" class="boton btn-suma operador btn-op-r" value="+">
+                <input type="button" class="boton btn-resta operador btn-op-r" value="-">
+                <input type="button" class="boton btn-mult operador btn-op-r" value="&#215;">
+                <input type="button" class="boton btn-div operador btn-op-r" value="&#247;">
+            </div>
+            <div class="grid-final">
+                <input type="button" disabled class="boton btn-igual btn-igual-r" value="=">
+                <input type="button" class="boton btn-clr btn-borr-r"  title="Limpiar todo" disabled value="C">
+            </div>
+        </div>
+    </div>
+
+    <div class="side-bar">
+        <label class="bg-mode">
+            <input type="checkbox" checked class="toggle">
+            <span class="slider"></span>
+        </label>
+        <ul class="temas-list">
+            <li id="tema-activo" class="tema-item" value="r"></li>
+            <li class="tema-item" value="m"></li>
+            <li class="tema-item" value="y"></li>
+            <li class="tema-item" value="g"></li>
+            <li class="tema-item" value="c"></li>
+            <li class="tema-item" value="b"></li>
+        </ul>
+    </div>
+
+    <button class="info-btn">info</button>
+
+    <div class="big-num-modal">
+        <div class="big-num">
+            <div class="modal-content selectable-r"></div>
+            <button class="cerrar no-select">&#215;</button>
+        </div>
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

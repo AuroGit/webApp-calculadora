@@ -1,0 +1,139 @@
+:root{
+    --btn-esp-y-bignum-r: #d33;
+    --btn-op-r: #d55;
+    --btn-borr-r: #822;
+    --btn-igual-r: #d74;
+    --link-bignum-hov-r: #f55;
+    --text-selec-r: #b22;
+    --body-light-r: #cdd;
+    --body-dark-r: #322;
+
+    --btn-esp-y-bignum-g: #2a2;
+    --btn-op-g: #5c5;
+    --btn-borr-g: #060;
+    --btn-igual-g: #ad3;
+    --link-bignum-hov-g: #5f5;
+    --text-selec-g: #2b2;
+    --body-light-g: #dcd;
+    --body-dark-g: #232;
+
+    --btn-esp-y-bignum-b: #22d;
+    --btn-op-b: #55d;
+    --btn-borr-b: #11a;
+    --btn-igual-b: #4ad;
+    --link-bignum-hov-b: #55f;
+    --text-selec-b: #22b;
+    --body-light-b: #ddc;
+    --body-dark-b: #223;
+
+    --btn-esp-y-bignum-c: #0bb;
+    --btn-op-c: #6bb;
+    --btn-borr-c: #066;
+    --btn-igual-c: #8db;
+    --link-bignum-hov-c: #4dd;
+    --text-selec-c: #088;
+    --body-light-c: #dcc;
+    --body-dark-c: #233;
+
+    --btn-esp-y-bignum-m: #a0a;
+    --btn-op-m: #b6b;
+    --btn-borr-m: #515;
+    --btn-igual-m: #86f;
+    --link-bignum-hov-m: #d4d;
+    --text-selec-m: #808;
+    --body-light-m: #cdc;
+    --body-dark-m: #323;
+
+    --btn-esp-y-bignum-y: #bb0;
+    --btn-op-y: #cc4;
+    --btn-borr-y: #661;
+    --btn-igual-y: #bd6;
+    --link-bignum-hov-y: #ff5;
+    --text-selec-y: #660;
+    --body-light-y: #ccd;
+    --body-dark-y: #332;
+}
+
+/* Tema Red */
+.bg-l-r{background-color: var(--body-light-r);}
+.bg-d-r{background-color: var(--body-dark-r);}
+.btn-esp-r{background-color: var(--btn-esp-y-bignum-r);}
+.btn-op-r{background-color: var(--btn-op-r);}
+.btn-borr-r{background-color: var(--btn-borr-r);}
+.btn-igual-r{background-color: var(--btn-igual-r);}
+.link-r{color: var(--btn-esp-y-bignum-r);}
+.selectable-r::selection, .selectable-r>sup::selection{background-color: var(--text-selec-r);}
+.link-r:hover{
+    color: var(--link-bignum-hov-r);
+    text-shadow: 0 0 5px var(--link-bignum-hov-r);
+}
+
+/* Tema Green */
+.bg-l-g{background-color: var(--body-light-g);}
+.bg-d-g{background-color: var(--body-dark-g);}
+.btn-esp-g{background-color: var(--btn-esp-y-bignum-g);}
+.btn-op-g{background-color: var(--btn-op-g);}
+.btn-borr-g{background-color: var(--btn-borr-g);}
+.btn-igual-g{background-color: var(--btn-igual-g);}
+.link-g{color: var(--btn-esp-y-bignum-g);}
+.selectable-g::selection, .selectable-g>sup::selection{background-color: var(--text-selec-g);}
+.link-g:hover{
+    color: var(--link-bignum-hov-g);
+    text-shadow: 0 0 5px var(--link-bignum-hov-g);
+}
+
+/* Tema Blue */
+.bg-l-b{background-color: var(--body-light-b);}
+.bg-d-b{background-color: var(--body-dark-b);}
+.btn-esp-b{background-color: var(--btn-esp-y-bignum-b);}
+.btn-op-b{background-color: var(--btn-op-b);}
+.btn-borr-b{background-color: var(--btn-borr-b);}
+.btn-igual-b{background-color: var(--btn-igual-b);}
+.link-b{color: var(--btn-esp-y-bignum-b);}
+.selectable-b::selection, .selectable-b>sup::selection{background-color: var(--text-selec-b);}
+.link-b:hover{
+    color: var(--link-bignum-hov-b);
+    text-shadow: 0 0 5px var(--link-bignum-hov-b);
+}
+
+/* Tema Cyan */
+.bg-l-c{background-color: var(--body-light-c);}
+.bg-d-c{background-color: var(--body-dark-c);}
+.btn-esp-c{background-color: var(--btn-esp-y-bignum-c);}
+.btn-op-c{background-color: var(--btn-op-c);}
+.btn-borr-c{background-color: var(--btn-borr-c);}
+.btn-igual-c{background-color: var(--btn-igual-c);}
+.link-c{color: var(--btn-esp-y-bignum-c);}
+.selectable-c::selection, .selectable-c>sup::selection{background-color: var(--text-selec-c);}
+.link-c:hover{
+    color: var(--link-bignum-hov-c);
+    text-shadow: 0 0 5px var(--link-bignum-hov-c);
+}
+
+/* Tema Magenta */
+.bg-l-m{background-color: var(--body-light-m);}
+.bg-d-m{background-color: var(--body-dark-m);}
+.btn-esp-m{background-color: var(--btn-esp-y-bignum-m);}
+.btn-op-m{background-color: var(--btn-op-m);}
+.btn-borr-m{background-color: var(--btn-borr-m);}
+.btn-igual-m{background-color: var(--btn-igual-m);}
+.link-m{color: var(--btn-esp-y-bignum-m);}
+.selectable-m::selection, .selectable-m>sup::selection{background-color: var(--text-selec-m);}
+.link-m:hover{
+    color: var(--link-bignum-hov-m);
+    text-shadow: 0 0 5px var(--link-bignum-hov-m);
+}
+
+/* Tema Yellow */
+.bg-l-y{background-color: var(--body-light-y);}
+.bg-d-y{background-color: var(--body-dark-y);}
+.btn-esp-y{background-color: var(--btn-esp-y-bignum-y);}
+.btn-op-y{background-color: var(--btn-op-y);}
+.btn-borr-y{background-color: var(--btn-borr-y);}
+.btn-igual-y{background-color: var(--btn-igual-y);}
+.link-y{color: var(--btn-esp-y-bignum-y);}
+.selectable-y::selection, .selectable-y>sup::selection{background-color: var(--text-selec-y);}
+.link-y:hover{
+    color: var(--link-bignum-hov-y);
+    text-shadow: 0 0 5px var(--link-bignum-hov-y);
+}

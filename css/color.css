@@ -1,0 +1,129 @@
+body{
+    background-color: #322;
+}
+
+.logo-bg{
+    background: linear-gradient(-45deg, #ff0600, #800080, 
+    #4040ff, #00ffff, #40ff40, #ffc000, #ff0600, #800080);
+    background-size: 600%;
+    animation: bg-gradient 60s linear infinite;
+}
+
+@keyframes logo {
+    0% {fill: #ff0600;}
+    14.3% {fill: #800080;}
+    28.6% {fill: #4040ff;}
+    43% {fill: #00ffff;}
+    57.3% {fill: #40ff40;}
+    71.6% {fill: #ffc000;}
+    100% {fill: #ff0600;}
+}
+
+@keyframes bg-gradient {
+    from {background-position: 0; }
+    to {background-position: 600%;}
+}
+
+.side-bar{
+    background-color: #333;
+}
+.side-bar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.slider {
+    background-color: #fff;
+}
+.slider::before {
+    background-color: #000;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:checked + .slider::before {
+    background-color: #fff;
+}
+
+.temas-list li:nth-child(1){
+    background-color: #d00;
+}
+.temas-list li:nth-child(2){
+    background-color: #d0d;
+}
+.temas-list li:nth-child(3){
+    background-color: #dd0;
+}
+.temas-list li:nth-child(4){
+    background-color: #0d0;
+}
+.temas-list li:nth-child(5){
+    background-color: #0dd;
+}
+.temas-list li:nth-child(6){
+    background-color: #00d;
+}
+
+.info-btn{
+    color: #fff;
+    border: solid 2px #fff;
+}
+.info-btn:hover{
+    background-color: #06f;
+    box-shadow: 0 0 10px #06f;
+    color: #fff;
+}
+
+.calculadora{
+    background-color: rgba(0,0,0,.33);
+    box-shadow: 0 0 25px #000;
+}
+.calculadora:hover{
+    box-shadow: 0 5px 35px 5px rgba(0,0,0,.75);
+}
+.calculadora::before{
+    background-color: #000;
+}
+
+.res-op{
+    color: #fff;
+}
+
+.res-op::selection, #resultado::selection, .modal-content::selection{
+    color: #fff;
+}
+
+#aviso{
+    color: #000;
+    background-color: #e30;
+    box-shadow: 0 0 10px #e30;
+}
+
+.extra-ops-bg{
+    background-color: #333;
+}
+
+.boton{
+    color: #fff;
+    background-color: #333;
+}
+.boton:enabled:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.big-num-modal{
+    background-color: rgba(0,0,0,.5);
+}
+
+.big-num{
+    color: #fff;
+    background-color: #000;
+    border: solid 1px #888;
+}
+
+.cerrar{
+    background-color: #000;
+    color: #fff;
+}
