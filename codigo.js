@@ -240,7 +240,13 @@ const avisoError = mensaje => {
 let temaActual = "r";
 const cambiarTema = btn => {
     let temaNuevo = btn.getAttribute("value");
-    for (item of temas) {
+    for (let item of temas) {
+        if (item.getAttribute("id") == "tema-activo") {
+            item.removeAttribute("id");
+        }
+    }
+
+    for (let item of temasFooter) {
         if (item.getAttribute("id") == "tema-activo") {
             item.removeAttribute("id");
         }
