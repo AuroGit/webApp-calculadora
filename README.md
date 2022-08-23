@@ -10,4 +10,7 @@ más un switch que alterna entre el modo Light y el modo Dark.
 También tiene un añadido "interactivo" con el botón de cambio de signo (-/+),
 el cual no solo invierte el numero del Display, sino todos los colores de la calculadora.
 
+¡¡IMPORTANTE!!
+Solo está adaptada al navegador Chrome
+
 Más información en el botón "info" de la Calculadora.
