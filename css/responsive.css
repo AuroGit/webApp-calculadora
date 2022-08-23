@@ -1,0 +1,227 @@
+@media screen and ((min-width: 750px) or (min-height: 800px)) {
+
+    .nav-bar{
+        display: none;
+    }
+
+    .logo-bg{
+        display: flex;
+    }
+
+    .entrada{
+        width: 400px;
+        font-size: 40pt;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    .calculadora{
+        padding: 20px;
+    }
+    .calculadora::before{
+        width: calc(400px + 40px);
+        transform: translate(-20px, -20px);
+        height: 210px;
+    }
+
+    .display{
+        margin-bottom: 30px;
+    }
+
+    .res-op{
+        height: 60px;
+        font-size: 40pt;
+        max-width: 400px;
+    }
+
+    #aviso{
+        height: 30px;
+        padding: 5px 10px;
+    }
+
+    .boton{
+        font-size: 24pt;
+        height: 75px;
+    }
+
+    .extra-op{
+        font-size: 16pt;
+        height: 50px;
+    }
+
+    .operador{
+        font-size: 32pt;
+    }
+
+    .grid-extra-ops{
+        grid-gap: 20px;
+        padding: 10px;
+    }
+    
+    .grid-botones{
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .grid-nums{
+        grid-gap: 10px;
+    }
+    
+    .grid-nums-decim{
+        grid-gap: 10px;
+    }
+    
+    .grid-ops{
+        grid-gap: 10px;
+    }
+    
+    .grid-final{
+        grid-gap: 10px;
+    }
+
+    .borrar>svg{
+        width: 32;
+    }
+
+    #icon-lg{
+        display: block;
+    }
+
+    #icon-sm{
+        display: none;
+    }
+
+    .side-bar{
+        display: block;
+    }
+
+    .big-num{
+        padding: 30px 50px;
+        padding-bottom: 0;
+    }
+
+    .info-btn-rounded{
+        display: block;
+    }
+
+    .info>ul>li>ul{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 749px) or (max-height: 799px){
+
+    .nav-bar{
+        display: block;
+    }
+
+    .logo-bg{
+        display: none;
+    }
+
+    .entrada{
+        width: 200px;
+        font-size: 20pt;
+        margin: 5px 0;
+        padding: 0 5px;
+    }
+
+    .calculadora{
+        padding: 10px;
+    }
+    .calculadora::before{
+        width: calc(200px + 20px);
+        transform: translate(-10px, -10px);
+        height: 105px;
+    }
+
+    .display{
+        margin-bottom: 15px;
+    }
+
+    .res-op{
+        height: 30px;
+        font-size: 20pt;
+        max-width: 200px;
+    }
+
+    #aviso{
+        height: 15px;
+        padding: 2.5px 5px;
+    }
+
+    .boton{
+        font-size: 12pt;
+        height: calc(75px / 2);
+    }
+
+    .extra-op{
+        font-size: 8pt;
+        height: 25px;
+        padding: 0;
+    }
+
+    .operador{
+        font-size: 16pt;
+        padding: 0;
+    }
+
+    .grid-extra-ops{
+        grid-gap: 10px;
+        padding: 5px;
+    }
+    
+    .grid-botones{
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .grid-nums{
+        grid-gap: 5px;
+    }
+    
+    .grid-nums-decim{
+        grid-gap: 5px;
+    }
+    
+    .grid-ops{
+        grid-gap: 5px;
+    }
+    
+    .grid-final{
+        grid-gap: 5px;
+    }
+
+    #icon-lg{
+        display: none;
+    }
+
+    #icon-sm{
+        display: block;
+    }
+
+    .info-btn-rounded{
+        display: none;
+    }
+
+    .big-num{
+        padding: 15px 10px;
+        padding-bottom: 0;
+        padding-left: 30px;
+    }
+
+    .info>h3{
+        font-size: 16px;
+    }
+    .info{
+        font-size: 14px;
+    }
+
+    .info>ul>li>ul{
+        padding-left: 5px;
+    }
+
+    .side-bar{
+        display: none;
+    }
+}
