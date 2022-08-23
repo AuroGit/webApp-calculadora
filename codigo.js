@@ -32,9 +32,12 @@ const modal = document.querySelector(".big-num-modal");
 const bigNum = document.querySelector(".modal-content");
 const clsModal = document.querySelector(".cerrar");
 
-const switchBtn = document.querySelector(".toggle")
+const switchBtn = [document.querySelector(".toggle"), 
+document.querySelector(".toggle-f")];
 const temas = document.querySelectorAll(".tema-item");
-const info = document.querySelector(".info-btn");
+const temasFooter = document.querySelectorAll(".tema-item-f");
+const info = [document.querySelector(".info-btn-rounded"), 
+document.querySelector(".info-btn")];
 
 // Funciones
 const addNum = numBtn => {
@@ -325,20 +328,20 @@ const cambiarTema = btn => {
     temaActual = temaNuevo;
 }
 
-const temaFondo = ()=> {
-    if (switchBtn.checked) {
+const temaFondo = btn => {
+    if (btn.checked) {
         for (item of document.body.classList) {
             if (item.includes(`bg-l-`)) {
-                info.style.color = "#fff";
-                info.style.borderColor = "#fff";
+                info[0].style.color = "#fff";
+                info[0].style.borderColor = "#fff";
                 document.body.classList.replace(item, `bg-d-${temaActual}`);
             }
         }
     } else {
         for (item of document.body.classList) {
             if (item.includes(`bg-d-`)) {
-                info.style.color = "#000";
-                info.style.borderColor = "#000";
+                info[0].style.color = "#000";
+                info[0].style.borderColor = "#000";
                 document.body.classList.replace(item, `bg-l-${temaActual}`);
             }
         }
@@ -407,7 +410,7 @@ resulLabel.addEventListener("click", ()=>{
     }
 });
 
-info.addEventListener("click", ()=>{
+const buildInfo = ()=> {
     const i = `<div class="info no-pe"><h3>Información sobre 'Calculadora'</h3><br>
     <ul>
     <li>Uso de la calculadora:<ul>
@@ -438,7 +441,9 @@ info.addEventListener("click", ()=>{
     `;
     modal.style.display = "flex";
     bigNum.innerHTML = i;
-});
+}
+info[0].addEventListener("click", ()=>{buildInfo()});
+info[1].addEventListener("click", ()=>{buildInfo()});
 
 clsModal.addEventListener("click", ()=> {modal.style.display = "none";})
 
@@ -448,4 +453,12 @@ temas[2].addEventListener("click", ()=> {cambiarTema(temas[2])});
 temas[3].addEventListener("click", ()=> {cambiarTema(temas[3])});
 temas[4].addEventListener("click", ()=> {cambiarTema(temas[4])});
 temas[5].addEventListener("click", ()=> {cambiarTema(temas[5])});
-switchBtn.addEventListener("click", ()=> {temaFondo()});
+switchBtn[0].addEventListener("click", ()=> {temaFondo(switchBtn[0])});
+
+temasFooter[0].addEventListener("click", ()=> {cambiarTema(temasFooter[0])});
+temasFooter[1].addEventListener("click", ()=> {cambiarTema(temasFooter[1])});
+temasFooter[2].addEventListener("click", ()=> {cambiarTema(temasFooter[2])});
+temasFooter[3].addEventListener("click", ()=> {cambiarTema(temasFooter[3])});
+temasFooter[4].addEventListener("click", ()=> {cambiarTema(temasFooter[4])});
+temasFooter[5].addEventListener("click", ()=> {cambiarTema(temasFooter[5])});
+switchBtn[1].addEventListener("click", ()=> {temaFondo(switchBtn[1])});
