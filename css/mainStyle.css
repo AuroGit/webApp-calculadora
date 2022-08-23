@@ -174,7 +174,6 @@ input:checked + .slider-h::before {
     float: right;
     display: inline-flex;
     justify-content: space-evenly;
-    /* border-left: solid 1px #444; */
     padding-left: 25px;
 }
 
@@ -217,7 +216,6 @@ input:checked + .slider-h::before {
 .calculadora{
     font-family: 'DM Mono', monospace;
     max-width: fit-content;
-    /* padding: 20px; */
     border-radius: 10px;
     transition-property: box-shadow, transform;
     transition: .2s;
@@ -228,9 +226,6 @@ input:checked + .slider-h::before {
 .calculadora::before{
     content: '';
     position: absolute;
-    /* width: calc(400px + 40px); */
-    /* height: 210px; */
-    /* transform: translate(-20px, -20px); */
     border-radius: 10px 10px 0 0;
     z-index: -1;
     opacity: .5;
@@ -241,10 +236,7 @@ input:checked + .slider-h::before {
 
 .res-op{
     display: flex;
-    /* max-width: 400px; */
-    /* height: 60px; */
     justify-content: right;
-    /* font-size: 40pt; */
 }
 
 #resultado{
@@ -266,11 +258,7 @@ input:checked + .slider-h::before {
 .entrada{
     display: block;
     cursor: default;
-    /* width: 400px; */
     height: fit-content;
-    /* font-size: 40pt; */
-    /* margin: 10px 0;
-    padding: 0 10px; */
     border: none;
     border-radius: 5px;
     text-align: right;
@@ -285,23 +273,19 @@ input:checked + .slider-h::before {
 
 #aviso{
     width: fit-content;
-    /* height: 30px; */
     display: block;
     text-align: center;
     border-radius: 50px;
     margin: auto;
     font-family: sans-serif;
     font-weight: 700;
-    /* padding: 5px 10px; */
     opacity: 0;
 }
 
 .boton{
     cursor: pointer;
-    /* font-size: 24pt; */
     border: none;
     padding: 10px;
-    /* height: 75px; */
     border-radius: 10px;
     transition-property: color, background-color;
     transition: .15s;
@@ -343,13 +327,18 @@ input:checked + .slider-h::before {
 
 .big-num{
     width: fit-content;
-    /* padding: 30px 50px;
-    padding-bottom: 0; */
     border-radius: 10px;
     max-width: 80%;
     max-height: 80%;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.big-num::-webkit-scrollbar{
+    width: 5px;
+}
+.big-num::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
 }
 
 .cerrar{
@@ -381,7 +370,6 @@ input:checked + .slider-h::before {
 }
 .info>ul>li>ul{
     list-style: "- ";
-    /* padding-left: 10px; */
 }
 
 @keyframes fade {
