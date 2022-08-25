@@ -19,6 +19,8 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column: 1 / span 3;
     grid-row: 1 / span 4;
+    -ms-grid-column: 1 / span 3;
+    -ms-grid-row: 1 / span 4;
 }
 
 .grid-nums-decim{
@@ -27,6 +29,8 @@
     grid-template-rows: 1fr;
     grid-column: 2 / span 2;
     grid-row: 4 / span 1;
+    -ms-grid-column: 2 / span 2;
+    -ms-grid-row: 4 / span 1;
     grid-auto-flow: dense;
 }
 
@@ -36,6 +40,8 @@
     grid-template-rows: repeat(4, 1fr);
     grid-column: 4 / span 1;
     grid-row: 1 / span 4;
+    -ms-grid-column: 4 / span 1;
+    -ms-grid-row: 1 / span 4;
 }
 
 .grid-final{
@@ -44,8 +50,11 @@
     grid-template-rows: 1fr;
     grid-column: 1 / span 4;
     grid-row: 5 / span 1;
+    -ms-grid-column: 1 / span 4;
+    -ms-grid-row: 5 / span 1;
 }
 
 .btn-igual{
     grid-column: 1 / span 3;
+    -ms-grid-column: 1 / span 3;
 }

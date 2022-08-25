@@ -7,6 +7,10 @@ body{
     #4040ff, #00ffff, #40ff40, #ffc000, #ff0600, #800080);
     background-size: 600%;
     animation: bg-gradient 60s linear infinite;
+    -moz-animation: bg-gradient 60s linear infinite;
+    -webkit-animation: bg-gradient 60s linear infinite;
+    -o-animation: bg-gradient 60s linear infinite;
+    -ms-animation: bg-gradient 60s linear infinite;
 }
 
 @keyframes logo {
@@ -129,6 +133,9 @@ input:checked + .slider::before, input:checked + .slider-h::before{
     color: #fff;
     background-color: #000;
     border: solid 1px #888;
+}
+.big-num::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .cerrar{

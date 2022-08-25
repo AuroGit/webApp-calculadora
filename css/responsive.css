@@ -21,6 +21,10 @@
     .calculadora::before{
         width: calc(400px + 40px);
         transform: translate(-20px, -20px);
+        -moz-transform: translate(-20px, -20px);
+        -webkit-transform: translate(-20px, -20px);
+        -o-transform: translate(-20px, -20px);
+        -ms-transform: translate(-20px, -20px);
         height: 210px;
     }
 
@@ -132,6 +136,10 @@
     .calculadora::before{
         width: calc(200px + 20px);
         transform: translate(-10px, -10px);
+        -moz-transform: translate(-10px, -10px);
+        -webkit-transform: translate(-10px, -10px);
+        -o-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
         height: 105px;
     }
 
